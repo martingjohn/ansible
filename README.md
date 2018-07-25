@@ -7,6 +7,7 @@ I use like so - where ${PWD}/ansible/complete has my playbooks and ${PWD}/ansibl
 
     docker run \
        --rm \
+       -e ANSIBLE_FORCE_COLOR=1 \
        -v ${PWD}/ansible/hosts:/etc/ansible/hosts:ro \
        -v ${PWD}/ansible/complete:/src \
        -v ${PWD}/ssh:/root/.ssh \
